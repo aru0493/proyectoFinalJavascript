@@ -1,0 +1,328 @@
+/* Fondo de página */
+
+body{
+    background-image: url(images/151206820-lindo-gato-patas-huella-fondo-transparente-patrón-repetitivo-fondo-de-pantalla-lindo-fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* --------------------------------------- */
+
+/* Barra de navegación */
+
+.container-fluid {
+    display: flex;
+    float: center;
+    justify-content: space-between;
+    background-color: rgb(255, 227, 179);
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px 0px 0px 0px;
+}
+
+.nombrep{
+    display: none;
+}
+
+.navlista{
+    margin-left: 10%;  
+}
+
+/* --------------------------------------- */
+
+/*Carrusel*/
+
+.carousel-inner {
+    margin-bottom: 20px;
+
+}
+
+.carruselheader{
+    color: black;
+}
+
+/* --------------------------------------- */
+
+/* Quienes somos */
+
+.quienessomos{
+    border: 1px solid;
+    border-radius: 5px;
+    
+}
+
+.quien{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.qui{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 100px;
+}
+
+.textoquienes{
+    text-align: start;
+    font-size: large;
+}
+/* --------------------------------------- */
+
+/*Títulos*/
+
+.req {
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: bisque;
+}
+
+/* --------------------------------------- */
+
+/* Mitad foto, mitad texto */
+
+.card{
+    background: linear-gradient(to bottom, #ffe4b5, #FFFFFF);
+}
+
+.fototextocard{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    
+}
+
+.fototexto{
+    display: block;
+}
+
+.card-text{
+    font-size: large;
+    text-align: start;
+}
+
+#imagen{
+    width: 50%;
+}
+
+/* --------------------------------------- */
+
+/* Tarjetas */
+
+.cartas{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}   
+
+.cartasp{
+    text-align: center;
+    margin-bottom: 40px;
+}    
+
+.cartash {
+    border: 1px solid #000; /* Agregar un borde entre el texto y la imagen */
+    background: linear-gradient(to bottom, #ffe4b5, #fff5e3); /* Fondo en degradado */
+    border-radius: 10px; 
+}
+
+.cuerpotarjeta{
+    padding: 20px;
+    border: 1px solid;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cartaspadre{
+    padding-top: 38px;
+}
+
+/* --------------------------------------- */
+
+/* Botón formulario */
+.boton {
+    background-color: bisque;
+    color: black;
+    border-radius: 5px ;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    border-color: black;    
+}
+
+.boton:hover{
+    background-color: burlywood;
+    color: black;
+    border-color: burlywood;
+}
+
+/* --------------------------------------- */
+
+/* Formularios */
+.form{
+   text-align: center;
+   padding-top: 38px;
+}
+
+.form-label{
+    background-color: bisque;
+}
+.selecciona{
+    padding: 0px!important;
+}
+
+.input{
+    box-shadow: none;
+    border-color: black;
+}
+
+.input:focus{
+    box-shadow: none;
+    border-color: black;
+    background-color: bisque;
+}
+
+/* --------------------------------------- */
+
+/* Medios para donar */
+
+.donap{
+    padding-top: 38px;
+}
+.dona{
+    font-weight: bolder; 
+}
+
+.parrafo{
+    font-size: x-large;
+    margin-top: 25px;
+}
+
+/* --------------------------------------- */
+
+/* Voluntariado */
+
+.voluntario{
+    background-color: bisque;
+    font-size: larger;
+}
+
+/* --------------------------------------- */
+
+/* Estilo botones dona*/
+.btn1, .btn2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: bisque;
+    color: black;
+    text-decoration: none;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn1:hover{
+    background-color: burlywood;
+    color: black;
+    border-color: burlywood;
+}
+
+.btn2:hover{
+    background-color: burlywood;
+    color: black;
+    border-color: burlywood;
+}
+
+.botondona{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.btn1{
+    margin-top: 20px;
+}
+
+/* --------------------------------------- */
+
+/* Footer */
+.footer{
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.navegadorfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-content: center;
+    margin-left: 35%;
+    padding: 5px;
+}
+
+.iconofooter{
+    cursor: pointer;       
+}
+
+/* --------------------------------------- */
+
+/* Icono wtp */
+#whatsapp{
+    display: inline block;
+    position: fixed;
+    left: 97%;
+    top: 86%;
+    scale: 1.5;
+    color: green;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.418);
+    border-radius: 50%;
+    cursor: pointer;   
+}
+
+
+
+/* --------------------------------------- */
+
+@media (max-width: 500px) {
+    .logogato{
+        display: none;
+    }
+    .cartas{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegadorfooter{
+        margin-left: 0;
+    }
+    #whatsapp{
+        top: 87%;
+        left: 90%;
+    }
+    .nombrep{
+        display: flex;
+        margin-top: 10px;
+        font-family: 'Itim', cursive;
+        font-size: larger;    
+    }
+    .qui{
+        padding-top: 70px;
+    }
+    .carousel-inner{
+        margin-top: 40px;
+    }  
+}
+
+@media (max-width: 800px){
+    .fototextocard{
+        flex-direction: column;
+        align-items: center;
+    }
+}  
+
