@@ -205,48 +205,48 @@
                 <div class="mb-3 form-input">
                     <label for="Nombre" class="form-label"></label>
                     <input type="text" class="form-control input " id="nombreAdopta" placeholder="Nombre">
-                    
+                    <div class="messageError" id="nombreError"></div>
                     
                 </div>
                 <div class="mb-3 form-input">
                     <label for="Apellido" class="form-label"></label>
                     <input type="text" class="form-control input " id="apellidoAdopta" placeholder="Apellido">
-                    
+                    <div class="messageError" id="apellidoError"></div>
                 </div>
                 <div class="mb-3 form-input">
                     <label for="Edad" class="form-label"></label>
                     <input type="text" class="form-control input " id="edadAdopta" placeholder="Edad">
-                    
+                    <div class="messageError" id="edadError"></div>
                 </div>
                 <div class="mb-3 form-input">
                     <label for="Localidad" class="form-label"></label>
                     <input type="text" class="form-control input " id="localidadAdopta" placeholder="Localidad">
-                    
+                    <div class="messageError" id="localidadError"></div>
                 </div>
                 <div class="mb-3 form-input">
                     <label for="Codigo postal" class="form-label"></label>
                     <input type="text" class="form-control input " id="codigoPostalAdopta" placeholder="Código postal">
-                    
+                    <div class="messageError" id="codigoPostalError"></div>
                 </div>
                 <div class="mb-3 form-input">
                     <label for="Direccion" class="form-label"></label>
                     <input type="text" class="form-control input " id="direccionAdopta" placeholder="Dirección">
-                    
+                    <div class="messageError" id="direccionError"></div>
                 </div>
                 <div class="mb-3 form-input">
                     <label for="Provincia" class="form-label"></label>
                     <input type="text" class="form-control input " id="provinciaAdopta" placeholder="Provincia">
-                    
+                    <div class="messageError" id="provinciaError"></div>
                 </div>
                 <div class="mb-3 form-input">
                     <label for="Telefono" class="form-label"></label>
                     <input type="text" class="form-control input " id="telefonoAdopta" placeholder="Teléfono">
-                    
+                    <div class="messageError" id="telefonoError"></div>
                 </div>
                 <div class="mb-3 form-input">
                     <label for="Email" class="form-label"></label>
                     <input type="email" class="form-control input " id="emailAdopta" placeholder="Email">
-                    
+                    <div class="messageError" id="emailError"></div>
                 </div>
 
 
@@ -261,45 +261,53 @@
                 <p class="req"><strong>Formulario de tránsito</strong></p>
                 <div class="mb-3">
                     <label for="Nombre y Apellido" class="form-label"></label>
-                    <input type="text" class="form-control input" id="nombreApellido" placeholder="Nombre y Apellido"
-                        required>
+                    <input type="text" class="form-control input" id="nombreApellido" placeholder="Nombre y Apellido">
+                    <div class="messageError" id="nombreApellidoError"></div>
                 </div>
                 <div class="mb-3">
                     <label for="Edad" class="form-label"></label>
-                    <input type="text" class="form-control input" id="edadTransito" placeholder="Edad" required>
+                    <input type="text" class="form-control input" id="edadTransito" placeholder="Edad">
+                    <div class="messageError" id="edadError"></div>
                 </div>
                 <div class="mb-3">
                     <label for="Localidad" class="form-label"></label>
-                    <input type="text" class="form-control input" id="localidadTransito" placeholder="Localidad" required>
+                    <input type="text" class="form-control input" id="localidadTransito" placeholder="Localidad">
+                    <div class="messageError" id="localidadError"></div>
                 </div>
                 <div class="mb-3">
                     <label for="Direccion" class="form-label"></label>
-                    <input type="text" class="form-control input" id="direccionTransito" placeholder="Dirección" required>
+                    <input type="text" class="form-control input" id="direccionTransito" placeholder="Dirección">
+                    <div class="messageError" id="direccionError"></div>
                 </div>
                 <div class="mb-3">
                     <label for="Teléfono" class="form-label"></label>
-                    <input type="text" class="form-control input" id="telefonoTransito" placeholder="Teléfono" required>
+                    <input type="text" class="form-control input" id="telefonoTransito" placeholder="Teléfono">
+                    <div class="messageError" id="telefonoError"></div>
                 </div>
                 <div class="mb-3">
                     <label for="Email" class="form-label"></label>
-                    <input type="email" class="form-control input" id="emailTransito" placeholder="Email" required>
+                    <input type="email" class="form-control input" id="emailTransito" placeholder="Email">
+                    <div class="messageError" id="emailError"></div>
                 </div>
                 <div class="mb-3">
                     <label for="Transito" class="form-label">¿Transitaste gatos anteriormente?</label>
-                    <input type="text" class="form-control input" id="transito" required>
+                    <input type="text" class="form-control input" id="transito">
+                    <div class="messageError" id="transitoError"></div>
                 </div>
                 <div class="mb-3">
                     <label for="Hogar" class="form-label">Si lo hiciste, ¿Pudiste tener al gato hasta que consiguió
                         hogar
                         definitivo? Caso contrario, ¿Qué ocurrió con el gato?</label>
-                    <input type="text" class="form-control input" id="hogar" required>
+                    <input type="text" class="form-control input" id="hogar">
+                    <div class="messageError" id="hogarError"></div>
                 </div>
                 <div class="mb-3">
                     <label for="Tiempo" class="form-label">¿Cuánto tiempo, como máximo, estarías dispuesto a tener
                         al
                         gato hasta
                         que encuentre hogar definitivo?</label>
-                    <input type="text" class="form-control input" id="tiempo" required>
+                    <input type="text" class="form-control input" id="tiempo">
+                    <div class="messageError" id="tiempoError"></div>
                 </div>
 
                 <div class="mb-3">
@@ -321,7 +329,8 @@
                 <div class="mb-3">
                     <label for="Animales" class="form-label">¿Tenés otros animales?(Indica cuáles y
                         cuántos)</label>
-                    <input type="text" class="form-control input" id="animales" required>
+                    <input type="text" class="form-control input" id="animales">
+                    <div class="messageError" id="animalesError"></div>
                 </div>
                 <button type="submit" class="btn btn-danger boton">Enviar</button>
             </form>
@@ -340,23 +349,28 @@
                 <form action="" id="formularioVoluntario">
                     <div class="mb-3">
                         <label for="Nombre" class="form-label"></label>
-                        <input type="text" class="form-control input" id="nombreVoluntario" placeholder="Nombre" required>
+                        <input type="text" class="form-control input" id="nombreVoluntario" placeholder="Nombre">
+                        <div class="messageError" id="nombreError"></div>
                     </div>
                     <div class="mb-3">
                         <label for="Apellido" class="form-label"></label>
-                        <input type="text" class="form-control input" id="apellidoVoluntario" placeholder="Apellido" required>
+                        <input type="text" class="form-control input" id="apellidoVoluntario" placeholder="Apellido">
+                        <div class="messageError" id="apellidoError"></div>
                     </div>
                     <div class="mb-3">
                         <label for="Edad" class="form-label"></label>
-                        <input type="text" class="form-control input" id="edadVoluntario" placeholder="Edad" required>
+                        <input type="text" class="form-control input" id="edadVoluntario" placeholder="Edad">
+                        <div class="messageError" id="edadError"></div>
                     </div>
                     <div class="mb-3">
                         <label for="Telefono" class="form-label"></label>
-                        <input type="text" class="form-control input" id="telefonoVoluntario" placeholder="Dirección" required>
+                        <input type="text" class="form-control input" id="telefonoVoluntario" placeholder="Dirección">
+                        <div class="messageError" id="direccionError"></div>
                     </div>
                     <div class="mb-3">
                         <label for="Email" class="form-label"></label>
-                        <input type="email" class="form-control input" id="emailVoluntario" placeholder="Email" required>
+                        <input type="email" class="form-control input" id="emailVoluntario" placeholder="Email">
+                        <div class="messageError" id="emailError"></div>
                     </div>
 
                     <button type="submit" class="btn btn-danger boton">Enviar</button>
@@ -404,11 +418,13 @@
                     <div class="mb-3">
                         <label for="Email" class="form-label input"></label>
                         <input type="email" class="form-control input" id="emailContacto" placeholder="Email">
+                        <div class="messageError" id="emailError"></div>
                     </div>
                     <div class="mb-3">
                         <label for="Texto" class="form-label"></label>
                         <textarea class="form-control" id="areaTexto" rows="3"
                             placeholder="Escribe tu mensaje aquí"></textarea>
+                            <div class="messageError" id="textoError"></div>
                     </div>
                     <button type="submit" class="btn btn-danger boton">Enviar</button>
                 </form>
