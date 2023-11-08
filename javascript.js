@@ -1,5 +1,8 @@
 
   document.addEventListener("DOMContentLoaded", function() {
+
+   /* Validación formulario de adopción */
+
     const formulario = document.getElementById("formularioAdopcion");
     formulario.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -44,8 +47,48 @@
         return esValido;
     }
 
+/* Validación formulario de contacto */
+
+    const formularioC = document.getElementById("formularioContacto");
+    formularioC.addEventListener("submit", function(eventC) {
+        eventC.preventDefault();
+        if (validarFormularioC()) {
+            formularioC.submit();
+        }
+    });
+
+    function validarFormularioC() {
+        let esValido = true;
+        const camposC = [
+            { campoIdC: "areaTexto", mensajeIdC: "textoError" },
+            { campoIdC: "emailContacto", mensajeIdC: "emailErrorC" },
+            
+        ];
+
+        camposC.forEach(function(campoC) {
+            const input = document.getElementById(campoC.campoIdC);
+            const valor = input.value.trim();
+            const mensaje = document.getElementById(campoC.mensajeIdC);
+
+            if (valor === "") {
+                mensaje.textContent = "Dato ingresado no válido";
+                esValido = false;
+            } else {
+                mensaje.textContent = "";
+            }
+
+            if (campoC.campoIdC === "emailContacto" && !validarEmail(valor)) {
+                mensaje.textContent = "Correo electrónico no válido";
+                esValido = false;
+            }
+        });
+
+        return esValido;
+    }
+
     function validarEmail(email) {
         const regex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
         return regex.test(email);
     }
+
 });
